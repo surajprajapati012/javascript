@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: lightgoldenrodyellow;
+    overflow: hidden;
+}
+
+
+
+header {
+    background-color: #000;
+}
+
+.hamburger {
+    display: none;
+    color: #fff;
+    font-size: 33px;
+}
+
+.logo {
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.navigation {
+    transition: all 1.5s ease;
+}
+
+.navigation ul {
+    display: flex;
+}
+
+.navigation ul li {
+    list-style: none;
+    width: 100%;
+    text-align: center;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.3rem;
+    padding: 2rem;
+    display: block;
+}
+
+.navigation ul li a:hover {
+    background-color: lightskyblue;
+}
+
+.navigation.active {
+    top: 85px;
+    left: 0;
+
+}
+
+@media only screen and (min-width: 376px) and (max-width: 575px) {
+
+    .container {
+        width: 350px;
+        margin: 0 auto;
+    }
+
+    body {
+        font-family: sans-serif;
+        background-color: lightgoldenrodyellow;
+        overflow: hidden;
+    }
+
+    header {
+        padding: 20px 0px;
+    }
+
+    .navigation {
+        position: absolute;
+        left: -500px;
+        top: 85px;
+        width: 50%;
+        background-color: #24252a;
+    }
+
+    .navigation ul {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+}
+
+@media only screen and (min-width: 576px) and (max-width: 991px) {
+
+    .container {
+        width: 550px;
+        margin: 0 auto;
+    }
+
+    body {
+        font-family: sans-serif;
+        background-color: lightgoldenrodyellow;
+        overflow: hidden;
+    }
+
+    header {
+        padding: 20px 0px;
+        /* width: 100%; */
+    }
+
+    .navigation {
+        position: absolute;
+        left: -500px;
+        top: 85px;
+        width: 50%;
+        background-color: #24252a;
+    }
+
+    .navigation ul {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 900px;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1150px;
+        margin: 0 auto;
+    }
+
+}
+
+@media (min-width: 1400px) {
+    .container {
+        width: 1200px;
+        margin: 0 auto;
+    }
+
+}
