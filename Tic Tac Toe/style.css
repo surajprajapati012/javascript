@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(153, 158, 141);
+}
+
+h1 {
+    text-align: center;
+    margin: 2rem;
+}
+
+.container {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.boxes button {
+    width: 20vmin;
+    height: 20vmin;
+    margin: 3px;
+    background-color: rgb(246, 190, 118);
+    font-size: 55px;
+    border: none;
+    border-radius: 10px;
+}
+
+.boxes button:active {
+    background-color: rgb(237, 233, 129);
+}
+
+.btnn button:active {
+    background-color: rgb(246, 211, 38);
+    color: black;
+}
+
+.btnn {
+    text-align: center;
+}
+
+.btnn button {
+    padding: 13px 30px;
+    margin: 30px;
+    background-color: rgb(28, 17, 3);
+    color: white;
+}
+
+#msg {
+    font-size: 50px;
+    font-weight: 800;
+    text-align: center;
+    margin: 20px;
+}
+
+.hide {
+    display: none;
+}
